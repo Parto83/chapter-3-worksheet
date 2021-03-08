@@ -5,13 +5,13 @@
         print("It is hot outside.")
     else:
         print("It is not hot out.")
-     add another parenthesis after temperature on the first line.
+     add another parenthesis after temperature: temperature = float(input("Temperature: "))
  
  2. Write a Python program that will take in a number from the user and print
     if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
     just use three if statements.
 
-    	num = int(input("Enter a number: "))
+num = int(input("Enter a number: "))
 if num > 0:
    print("Positive number")
 elif num == 0:
@@ -35,7 +35,7 @@ if num < 10 and num > -10:
         print("Correct!")
    else:
         print("Incorrect.")
-The options will only print out after an input is given
+This program prints the options only after an input is given.
      
  5. There are two things wrong with this code that tests if x is set to a
     positive value. One prevents it from running, and the other is subtle.
