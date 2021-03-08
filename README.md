@@ -5,25 +5,25 @@
         print("It is hot outside.")
     else:
         print("It is not hot out.")
-     The second parenthesis after temperature on the first line
+     add another parenthesis after temperature on the first line.
  
  2. Write a Python program that will take in a number from the user and print
     if it is positive, negative, or zero. Use a proper if/elif/else chain, don't
     just use three if statements.
 
-    	number = int(input("Enter a number: "))
-if number > 0:
-    print("Your number is positive")
-elif number = 0:
-    print("Your number is zero")
-elif number < 0:
-    print("Your number is negative")
+    	num = int(input("Enter a number: "))
+if num > 0:
+   print("Positive number")
+elif num == 0:
+   print("Zero")
+else:
+   print("Negative number")
 
  3. Write a Python program that will take in a number from a user and print
     out ``Success'' if it is greater than -10 and less than 10, inclusive. (1 pt)
 
-number = int(input("Enter a number: "))
-if number < 10 and number > -10:
+num = int(input("Enter a number: "))
+if num < 10 and num > -10:
     print("Success")
 
  4. This runs, but there is something wrong. What is it? (1 pt)
@@ -33,7 +33,7 @@ if number < 10 and number > -10:
     print("B. Desert topping")
     if user_input.upper() == "A":
         print("Correct!")
-    else:
+   else:
         print("Incorrect.")
 The options will only print out after an input is given
      
@@ -48,7 +48,7 @@ The options will only print out after an input is given
     else:
         print("x is not positive.")
 
-The first thing wrong is that x is not defined. The second thing is that it uses “==” to assign the value of 4 to x when it should just read x = 4.
+first, instead of two equal signs ("==") we need only one ("="). Second, x is not defined. 
      
  6. What three things are wrong with the following code? (3 pts)
      
@@ -56,7 +56,7 @@ The first thing wrong is that x is not defined. The second thing is that it uses
     if x = 3
         print("You entered 3")
   
-The first mistake is that the int function should go in front of the input function to convert the input into an integer. The second mistake is that the if statement should use 2 equal signs otherwise is saying to assign x to a value of 3. The third mistake is that there should be a colon after the if statement.
+The first mistake: it needs to have a colon after the if statement. Second, it needs two equal signs ("=="), in other words x== 3. The third one is that it needs int fundtion: x = int(input("Enter a number: ")) 
    
  7. There are four things wrong with this code. Identify all four issues. (4 pts)
      
@@ -66,7 +66,8 @@ The first mistake is that the int function should go in front of the input funct
         else
         print("Incorrect! It is Beaker.")
 
-The first mistake is that the first if statement should have two equal signs instead of one. The second mistake is that there should be a colon after the else statement. The third mistake is that the else statement should not be imbedded into the if statement. The fourth statement is that the if statement is checking to see if a is equal to beaker when there is no a variable.
+first mistake: a is not defined, a has to be replaced with answer. Second mistake, if statement needs two equal signs ("=="). in oder words, if answer == "Beaker":
+Third mistake: after else statement, we need colon. Forth mistake: else statement has indentation error.
      
  8. This program doesn't work correctly. What is wrong? (1 pt)
      
@@ -74,7 +75,7 @@ The first mistake is that the first if statement should have two equal signs ins
     if x == "Happy" or "Glad":
         print("That is good to hear!")
 
-This program prints “That is good to hear!” no matter what the user inputs. To fix this the if statment should read “ if x == “Happy” or x == “Glad”:”.
+Regardless of the input, This program prints “That is good to hear!”. Even when you answer for instance " I am bad today", it prints: that is good to hear.
      
  9. Look at the code below. Write your best guess here on what it will print.
     Next, run the code and see if you are correct.
@@ -96,7 +97,10 @@ This program prints “That is good to hear!” no matter what the user inputs. 
     if z:
         print("Buzz")
 
-GUESS : nothing an error will occur
+GUESS : x=5
+y=Fizz
+z = Buzz
+
 ACTUAL:
 x = 5
 y = False
@@ -133,7 +137,7 @@ False
 False
 True
 False
-False
+True
 
 ACTUAL:
 True
@@ -163,12 +167,12 @@ True
      
 GUESS : 
 True
-True
+False
 True
 True
 False
 False
-True
+False
 True
 False
 
@@ -204,5 +208,5 @@ ERROR
  
     print("Great! you will start the game with", money, "dollars.")
 
-They didn't assign the occupations to a variable.
+The occupations are not assigned to variables.
 
